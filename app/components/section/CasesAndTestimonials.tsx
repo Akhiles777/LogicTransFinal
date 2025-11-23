@@ -16,7 +16,7 @@ export default function CasesAndTestimonials(){
                     <div
                         className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-64 sm:h-80">
                         <Image src="/photo6.jpeg" alt="Логистика - Погрузка оборудования" fill
-                               className="object-cover group-hover:scale-105 transition-transform duration-500"
+                               className="object-cover transition-transform duration-500"
                                loading="lazy"/>
                         <div
                             className="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent flex items-end p-4 sm:p-6">
@@ -29,7 +29,7 @@ export default function CasesAndTestimonials(){
                     <div
                         className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-64 sm:h-80">
                         <Image src="/photo-7.jpeg" alt="Логистика - Таможенное оформление" fill
-                               className="object-cover group-hover:scale-105 transition-transform duration-500"
+                               className="object-cover  transition-transform duration-500"
                                loading="lazy"/>
                         <div
                             className="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent flex items-end p-4 sm:p-6">

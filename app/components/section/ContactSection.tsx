@@ -13,7 +13,7 @@ export default function ContactSection() {
 
                 {/* Центральный запрос */}
                 <div
-                    className="p-6 sm:p-8 bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-xl border border-blue-100 text-center hover:shadow-2xl transition hover:scale-102 hover:cursor-pointer">
+                    className="p-6 sm:p-8 bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-xl border border-blue-100 text-center hover:shadow-2xl transition  hover:cursor-pointer">
                     <img
                         src="/moscow.jpeg"
                         alt="Центральный офис"
@@ -48,7 +48,7 @@ export default function ContactSection() {
 
                 {/* Сочи */}
                 <div
-                    className="p-6 sm:p-8 bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-xl border border-blue-100 text-center hover:shadow-2xl transition hover:scale-102 hover:cursor-pointer">
+                    className="p-6 sm:p-8 bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-xl border border-blue-100 text-center hover:shadow-2xl transition  hover:cursor-pointer">
                     <img
                         src="/sochi.jpg"
                         alt="Офис Сочи"
@@ -84,7 +84,7 @@ export default function ContactSection() {
 
                 {/* Уфа */}
                 <div
-                    className="p-6 sm:p-8 bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-xl border border-blue-100 text-center hover:shadow-2xl transition hover:scale-102 hover:cursor-pointer">
+                    className="p-6 sm:p-8 bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-xl border border-blue-100 text-center hover:shadow-2xl transition  hover:cursor-pointer">
                     <img
                         src="/Ufa.jpeg"
                         alt="Офис Уфа"
