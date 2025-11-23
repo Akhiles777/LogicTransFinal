@@ -7,7 +7,9 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-      <header className="max-w-6xl mx-auto px-6 py-8 relative bg-transparent">
+      // Добавил z-50, чтобы гарантировать, что хедер всегда поверх Hero-секции
+      // Header по-прежнему bg-transparent, но мобильное меню будет непрозрачным
+      <header className="max-w-6xl mx-auto px-6 py-8 relative bg-transparent z-50">
         <div className="flex items-center justify-between relative z-20">
           <div className="flex items-center gap-4">
             <Image src="/logo.png" alt="Express Logistics" width={48} height={48} className="rounded-xl" />
@@ -19,10 +21,10 @@ export default function Header() {
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex gap-6 text-sm text-slate-700">
-            <a href="#why" className="link-underline hover:text-sky-600 transition-colors">Преимущества</a> {/* Ссылка на WHY US */}
-            <a href="#process" className="link-underline hover:text-sky-600 transition-colors">Этапы работы</a> {/* Ссылка на PROCESS */}
-            <a href="#stats" className="link-underline hover:text-sky-600 transition-colors">Результаты</a> {/* Ссылка на STATS */}
-            <a href="#contacts" className="link-underline hover:text-sky-600 transition-colors">Контакты</a> {/* Ссылка на CONTACTS */}
+            <a href="#why" className="link-underline hover:text-blue-600 transition-colors">Преимущества</a>
+            <a href="#process" className="link-underline hover:text-blue-600 transition-colors">Этапы работы</a>
+            <a href="#stats" className="link-underline hover:text-blue-600 transition-colors">Результаты</a>
+            <a href="#contacts" className="link-underline hover:text-blue-600 transition-colors">Контакты</a>
           </nav>
 
           {/* Mobile Burger Button */}
@@ -38,13 +40,13 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Mobile Dropdown Menu */}
-        <div className={`absolute top-full left-0 w-full bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-lg md:hidden transition-all duration-300 ease-in-out overflow-hidden z-10 ${isOpen ? 'max-h-96 opacity-100 py-4' : 'max-h-0 opacity-0 py-0'}`}>
+        {/* Mobile Dropdown Menu (Исправлено: bg-white вместо bg-white/95) */}
+        <div className={`absolute top-full left-0 w-full bg-white border-b border-slate-100 shadow-lg md:hidden transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? 'max-h-96 opacity-100 py-4' : 'max-h-0 opacity-0 py-0'}`}>
           <nav className="flex flex-col px-6 gap-4 text-slate-700">
-            <a href="#why" onClick={() => setIsOpen(false)} className="block text-lg font-medium py-2 border-b border-slate-50">Преимущества</a>
-            <a href="#process" onClick={() => setIsOpen(false)} className="block text-lg font-medium py-2 border-b border-slate-50">Этапы работы</a>
-            <a href="#stats" onClick={() => setIsOpen(false)} className="block text-lg font-medium py-2 border-b border-slate-50">Результаты</a>
-            <a href="#contacts" onClick={() => setIsOpen(false)} className="block text-lg font-medium py-2">Контакты</a>
+            <a href="#why" onClick={() => setIsOpen(false)} className="block text-lg font-medium py-2 border-b border-slate-50 hover:text-blue-600">Преимущества</a>
+            <a href="#process" onClick={() => setIsOpen(false)} className="block text-lg font-medium py-2 border-b border-slate-50 hover:text-blue-600">Этапы работы</a>
+            <a href="#stats" onClick={() => setIsOpen(false)} className="block text-lg font-medium py-2 border-b border-slate-50 hover:text-blue-600">Результаты</a>
+            <a href="#contacts" onClick={() => setIsOpen(false)} className="block text-lg font-medium py-2 hover:text-blue-600">Контакты</a>
           </nav>
         </div>
       </header>
