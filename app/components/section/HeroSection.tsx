@@ -40,7 +40,7 @@ export default function HeroSection(){
                         Запросить расчёт стоимости
                     </a>
                     <a
-                        href="#contacts"
+                        href="#cases"
                         className="inline-block border-2 border-white text-white px-5 sm:px-8 py-2.5 sm:py-4 rounded-full text-base sm:text-xl font-semibold hover:bg-white/10 transition active:scale-95 tracking-wider"
                     >
                         Посмотреть наши кейсы

@@ -3,7 +3,7 @@ import React from "react";
 
 export default function CasesAndTestimonials(){
     return (
-        <section className="bg-gradient-to-b from-blue-50 to-white py-12 sm:py-16">
+        <section id="cases" className="bg-gradient-to-b from-blue-50 to-white py-12 sm:py-16">
             <div className="max-w-6xl mx-auto px-6">
                 <h3 className="text-3xl sm:text-4xl font-bold text-center mb-4">Примеры нашей работы</h3>
                 <p className="text-center text-slate-600 mb-8 sm:mb-12 max-w-2xl mx-auto">
@@ -45,12 +45,10 @@ export default function CasesAndTestimonials(){
                         <div className="shrink-0">
                             <div
                                 className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-white text-blue-600 flex items-center justify-center text-2xl sm:text-3xl font-bold">
-<img src={'/photo-8.jpeg'} alt={''}  className='rounded-xl object-cover border border-blue-700'/>
+<img src={'/photo-8.jpeg'} alt={''}  className='rounded-xl object-cover'/>
 
                             </div>
-
-
-
+                            
                         </div>
                         <div className="mt-4 md:mt-0">
                             <div className="text-xl sm:text-2xl font-bold">Кейс: подшипники для крупного завода — решено
