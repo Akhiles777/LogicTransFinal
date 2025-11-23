@@ -18,7 +18,7 @@ export default function Header() {
         </div>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex gap-6 text-base text-slate-700">
+        <nav className="hidden  md:flex gap-6 text-base text-slate-700">
           <a href="#why" className="link-underline hover:text-sky-600 transition-colors">Почему мы</a>
           <a href="#process" className="link-underline hover:text-sky-600 transition-colors">Этапы</a>
           <a href="#stats" className="link-underline hover:text-sky-600 transition-colors">Результаты</a>
@@ -30,7 +30,7 @@ export default function Header() {
           onClick={() => setIsOpen(!isOpen)} 
           className="md:hidden p-2 text-slate-700 focus:outline-none"
         >
-          <div className="w-6 h-5 relative flex flex-col justify-between">
+          <div className="w-6 h-5 relative mr-2 flex flex-col justify-between">
             <span className={`block h-0.5 w-full bg-slate-800 rounded transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-2.5' : ''}`} />
             <span className={`block h-0.5 w-full bg-slate-800 rounded transition-all duration-300 ${isOpen ? 'opacity-0' : ''}`} />
             <span className={`block h-0.5 w-full bg-slate-800 rounded transition-all duration-300 ${isOpen ? '-rotate-45 -translate-y-2' : ''}`} />
