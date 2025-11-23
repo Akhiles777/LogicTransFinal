@@ -12,12 +12,18 @@ const geistMono = Geist_Mono({
     subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-    title: "Express Logistics — Логистика из ЕС",
-    description: "Полное ВЭД, сертификация и безопасные поставки промышленного оборудования из Европы.",
-    icons: {
-        icon: "/logo.png",
+export const metadata:Metadata = {
+    title: 'Логистика сложных грузов из ЕС — Express Logistics',
+    description: 'Полное ВЭД, сертификация и безопасные поставки промышленного оборудования из Европы. Выкуп у производителя, фиксированные сроки, онлайн-отслеживание 24/7.',
+    keywords: ['логистика', 'ВЭД', 'сертификация', 'поставка из ЕС', 'промышленное оборудование', 'подшипники'],
+    openGraph: {
+        title: 'Логистика сложных грузов из ЕС — Express Logistics',
+        description: 'Полное ВЭД, сертификация и безопасные поставки промышленного оборудования из Европы. Выкуп у производителя, фиксированные сроки, онлайн-отслеживание 24/7.',
     },
+    robots: {
+        index: true,
+        follow: true,
+    }
 };
 
 export default function RootLayout({
