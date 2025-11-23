@@ -1,6 +1,7 @@
 import React from "react";
 import Image from 'next/image';
 import Counter from "./components/Counter";
+import Header from "./components/Header"; // Импортируем компонент меню
 
 export const metadata = {
   title: 'Логистика сложных грузов из ЕС — Express Logistics',
@@ -15,8 +16,6 @@ export const metadata = {
     follow: true,
   }
 };
-
-
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -50,21 +49,9 @@ export default function Home() {
     <main className="min-h-screen bg-linear-to-b from-zinc-50 to-white font-sans text-slate-900">
       {/* Structured data for SEO */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <header className="max-w-6xl mx-auto px-6 py-8 flex items-center justify-between">
-        <div className="flex items-center gap-4">
-          <Image src="/logo.png" alt="Express Logistics" width={48} height={48} className="rounded-xl" />
-          <div>
-            <h1 className="text-lg font-semibold">Express Logistics</h1>
-            <p className="text-sm text-slate-600">Логистика сложных грузов из ЕС — ВЭД и сертификация без рисков</p>
-          </div>
-        </div>
-        <nav className="hidden md:flex gap-6 text-sm text-slate-700">
-          <a href="#why" className="link-underline">Почему мы</a>
-          <a href="#process" className="link-underline">Этапы</a>
-          <a href="#stats" className="link-underline">Результаты</a>
-          <a href="#contacts" className="link-underline">Контакты</a>
-        </nav>
-      </header>
+      
+      {/* Вставляем шапку с рабочим мобильным меню */}
+      <Header />
 
       <section className="bg-white shadow-sm" id="stats">
         <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
