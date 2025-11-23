@@ -1,14 +1,29 @@
 import React from "react";
+// Добавляем импорт Image
+import Image from 'next/image';
 
 export default function HeroSection(){
     return (
         <section
-            className="relative h-screen max-h-[800px] flex items-center bg-cover bg-center"
-            style={{backgroundImage: "url('/photo.opt.jpg')"}}
+            className="relative h-screen max-h-[800px] flex items-center"
         >
+            {/* 1. ФОНОВОЕ ИЗОБРАЖЕНИЕ: Используем компонент Image */}
+            <Image
+                src="/photo.opt.jpg"
+                alt="Промышленное оборудование и логистика"
+                fill
+                priority // Задаем высокий приоритет для быстрой загрузки первого экрана
+                className="object-cover"
+            />
+
+            {/* 2. НАЛОЖЕНИЕ И РАЗМЫТИЕ: Оставляем для затемнения текста */}
             <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm"></div>
-            <div className="max-w-6xl mx-auto px-6 relative z-10 text-white text-center">
-                {/* Уменьшенный шрифт для мобильных: text-4xl sm:text-5xl */}
+
+            {/* 3. КОНТЕНТ: Увеличиваем z-index, чтобы он был поверх всего */}
+            <div className="max-w-6xl mx-auto px-6 relative z-10 sm:z-20 text-white text-center">
+
+                {/* ... Ваш остальной контент (h2, p, кнопки) остается без изменений ... */}
+
                 <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
                     Логистика сложных промышленных грузов из Европы — под ключ и <span className='text-blue-600'>без рисков</span>
                 </h2>
@@ -18,16 +33,12 @@ export default function HeroSection(){
                     сохранность оборудования.
                 </p>
                 <div className="mt-8 sm:mt-10 flex flex-wrap gap-3 sm:gap-4 justify-center">
-
-                    {/* Кнопка 1: Уменьшен текст (text-base) и вертикальный отступ (py-2.5) для моб. */}
                     <a
                         href="mailto:pavlov.anatoly@gmail.com"
                         className="inline-block bg-blue-600 text-white px-5 sm:px-8 py-2.5 sm:py-4 rounded-full text-base sm:text-xl font-semibold shadow-2xl hover:bg-blue-700 transform transition active:scale-95 btn-shine tracking-wider"
                     >
                         Запросить расчёт стоимости
                     </a>
-
-                    {/* Кнопка 2: Уменьшен текст (text-base) и вертикальный отступ (py-2.5) для моб. */}
                     <a
                         href="#contacts"
                         className="inline-block border-2 border-white text-white px-5 sm:px-8 py-2.5 sm:py-4 rounded-full text-base sm:text-xl font-semibold hover:bg-white/10 transition active:scale-95 tracking-wider"

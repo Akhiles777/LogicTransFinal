@@ -45,7 +45,8 @@ export default function CasesAndTestimonials(){
                         <div className="shrink-0">
                             <div
                                 className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-white text-blue-600 flex items-center justify-center text-2xl sm:text-3xl font-bold">
-<img src={'/photo-8.jpeg'} className='rounded-xl object-cover border border-blue-700'/>
+<img src={'/photo-8.jpeg'} alt={''}  className='rounded-xl object-cover border border-blue-700'/>
+
                             </div>
 
 
