@@ -9,7 +9,7 @@ export default function Header() {
   return (
       // Добавил z-50, чтобы гарантировать, что хедер всегда поверх Hero-секции
       // Header по-прежнему bg-transparent, но мобильное меню будет непрозрачным
-      <header className="max-w-6xl mx-auto px-6 py-8 relative bg-transparent z-50">
+      <header className="max-w-6xl mx-auto px-6 py-8 relative bg-transparent z-50" style={{backgroundImage: `url(${Image})`}}>
         <div className="flex items-center justify-between relative z-20">
           <div className="flex items-center gap-4">
             <Image src="/logo.png" alt="Express Logistics" width={48} height={48} className="rounded-xl" />
@@ -20,7 +20,7 @@ export default function Header() {
           </div>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex gap-6 text-sm text-slate-700">
+          <nav className="hidden ml-10 md:flex gap-6 text-lg text-slate-700">
             <a href="#why" className="link-underline hover:text-blue-600 transition-colors">Преимущества</a>
             <a href="#process" className="link-underline hover:text-blue-600 transition-colors">Этапы работы</a>
             <a href="#stats" className="link-underline hover:text-blue-600 transition-colors">Результаты</a>
