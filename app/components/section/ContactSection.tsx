@@ -15,7 +15,7 @@ export default function ContactSection() {
                 <div
                     className="p-6 hover:-translate-y-5 sm:p-8 bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-xl border border-blue-100 text-center  transition  hover:cursor-pointer">
                     <img
-                        src="/moscow.jpeg"
+                        src="/Contacts/moscow.jpeg"
                         alt="Центральный офис"
                         className="w-full h-32 sm:h-40 object-cover rounded-xl mb-4 sm:mb-6 shadow-md"
                     />
@@ -50,7 +50,7 @@ export default function ContactSection() {
                 <div
                     className="p-6 hover:-translate-y-5 sm:p-8 bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-xl border border-blue-100 text-center transition  hover:cursor-pointer">
                     <img
-                        src="/sochi.jpg"
+                        src="/Contacts/sochi.jpg"
                         alt="Офис Сочи"
                         className="w-full h-32 sm:h-40 object-cover rounded-xl mb-4 sm:mb-6 shadow-md"
                     />
@@ -86,7 +86,7 @@ export default function ContactSection() {
                 <div
                     className="p-6 hover:-translate-y-5 sm:p-8 bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-xl border border-blue-100 text-center  transition  hover:cursor-pointer">
                     <img
-                        src="/Ufa.jpeg"
+                        src="/Contacts/Ufa.jpeg"
                         alt="Офис Уфа"
                         className="w-full h-32 sm:h-40 object-cover rounded-xl mb-4 sm:mb-6 shadow-md"
                     />
